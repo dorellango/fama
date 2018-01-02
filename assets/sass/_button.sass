@@ -1,0 +1,26 @@
+$btn-p: $teal
+$btn-a: $orange
+
+.btn
+  padding: .6rem 1.25rem
+  border-radius: 3px
+  background-color: $lightest
+  color: $grey
+  transition: all .3s ease
+  font-weight: bold
+  &:hover
+    background-color: $light
+  &.btn-lg
+    font-size: 1.25rem
+  &.btn-p
+    color: white
+    border-color: $btn-p
+    background-color: $btn-p
+    &:hover
+      background-color: darken($btn-p, 15%)
+  &.btn-a
+    color: white
+    border-color: $btn-a
+    background-color: $btn-a
+    &:hover
+      background-color: darken($btn-a, 15%)

@@ -4,6 +4,7 @@
     <Hero/>
     <About/>
     <OurWork/>
+    <Team/>
     <FooterPage/>
   </section>
 </template>
@@ -14,6 +15,7 @@ import Hero from '~/components/Hero.vue'
 import About from '~/components/About.vue'
 import FooterPage from '~/components/FooterPage.vue'
 import OurWork from '~/components/OurWork.vue'
+import Team from '~/components/Team.vue'
 
 export default {
   components: {
@@ -21,6 +23,7 @@ export default {
     Hero,
     About,
     FooterPage,
+    Team,
     OurWork
   }
 }

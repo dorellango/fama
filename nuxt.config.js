@@ -51,5 +51,6 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  plugins: ['~/plugins/vue2-google-maps.js']
 }
