@@ -12,6 +12,9 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:400,700' }
+    ],
+    script: [
+      { src: 'https://use.fontawesome.com/releases/v5.0.1/js/all.js' }
     ]
   },
   /*
@@ -22,12 +25,13 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    vendor: ['minireset.css'],
     /*
     ** Run ESLint on save
     */
     extend (config, ctx) {
       /*
-      ** Change img rule to load SVG's with vue-svg-loader
+      ** Change the behavior to manage .svg files
       */
       const urlLoader = config.module.rules.find((rule) => rule.loader === 'url-loader')
       urlLoader.test = /\.(png|jpe?g|gif)$/

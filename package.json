@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "minireset.css": "0.0.3",
-    "node-sass": "^4.6.0",
+    "node-sass": "^4.6.1",
     "nuxt": "^1.0.0-rc11",
     "sass-loader": "^6.0.6",
     "vue-svg-loader": "^0.3.0"

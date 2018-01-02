@@ -1,19 +1,13 @@
 <template>
   <div>
-    <Navbar/>
-      <nuxt/>
-    <FooterPage/>
+    <nuxt/>
   </div>
 </template>
 
 <script>
-import Navbar from '~/components/Navbar.vue'
-import FooterPage from '~/components/FooterPage.vue'
 
 export default {
   components: {
-    Navbar,
-    FooterPage
   }
 }
 </script>
@@ -29,4 +23,6 @@ export default {
       max-width: 1152px
       margin: 0 auto
       padding: 0 1rem
+  a
+    text-decoration: none
 </style>
