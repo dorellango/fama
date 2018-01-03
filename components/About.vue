@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div id="about">
     <div class="container">
       <div class="is-section">
         <div class="columns">
@@ -11,7 +11,10 @@
             <div class="content">
               <p>Ut qui in iste soluta atque explicabo nam esse ex.</p>
               <p>Lorem ipsum dolor sit amet, <strong>consectetur adipisicing elit.</strong> Numquam natus voluptate, aut corrupti ipsa harum tenetur sunt pariatur qui hic nam? Aspernatur perspiciatis esse placeat vel? Ea magni, obcaecati ratione aspernatur doloribus saepe facilis pariatur dolore possimus! Fugit, quod culpa.</p>
-              <blockquote class="has-text-darker">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, iusto!</blockquote>
+              <div class="level">
+                  <Quote class="icon is-large has-text-orange"/>
+                <blockquote class="has-text-darker">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, iusto!</blockquote>
+              </div>
             </div>
           </div>
           <div class="column is-one-third" style="text-align: center">
@@ -23,8 +26,16 @@
   </div>
 </template>
 
+<script>
+import Quote from '~/assets/quote.svg'
+
+export default {
+  components: { Quote }
+}
+</script>
+
 <style lang="sass">
   @import '~assets/sass/_variables.sass'
-  .about
+  #about
     background-color: $lighter
 </style>

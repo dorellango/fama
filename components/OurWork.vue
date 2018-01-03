@@ -1,5 +1,5 @@
 <template>
-  <div class="our-work">
+  <div id="our-work">
     <div class="container">
       <Fists class="our-work-bg"/>
       <div class="is-section">
@@ -70,7 +70,7 @@ export default {
 
 <style lang="sass">
   @import '~assets/sass/_variables.sass'
-  .our-work
+  #our-work
     color: $grey
     overflow: hidden
     .container

@@ -4,15 +4,6 @@
   </div>
 </template>
 
-<script>
-
-export default {
-  components: {
-  }
-}
-</script>
-
-
 <style lang="sass">
   @import '~assets/sass/app.sass'
 
@@ -20,7 +11,7 @@ export default {
     color: $darker
     
   body
-    font-family: 'Raleway', sans-serif
+    font-family: 'Source Sans Pro', sans-serif
     line-height: 1.5
     color: $dark
     

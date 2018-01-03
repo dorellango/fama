@@ -2,12 +2,13 @@
   <div :class="['navbar', this.scrolled ? 'navbar-scrolled' : '']">
       <div class="container navbar__inner">
         <span class="navbar__brand has-text-white">
-          -- LOGO --
+          -- logo --
         </span>
-        <ul class="navbar__list has-text-white">
-          <li class="mr2">Lorem.</li>
-          <li class="mr2">Quo?</li>
-          <li class="mr2">Atque.</li>
+        <ul class="navbar__list">
+          <li class="mr2"><a class="has-text-white" @click="scrollTo('#about')">About.</a></li>
+          <li class="mr2"><a class="has-text-white" @click="scrollTo('#our-work')">Work</a></li>
+          <li class="mr2"><a class="has-text-white" @click="scrollTo('#stats')">Stats</a></li>
+          <li class="mr2"><a class="has-text-white" @click="scrollTo('#team')">Team</a></li>
           <li><a href="" class="btn btn-orange"> Contact <strong>Us</strong></a></li>
         </ul>
       </div>
@@ -15,11 +16,12 @@
 </template>
 <script>
 import Smartphone from 'assets/smartphone.svg'
+import jump from 'jump.js'
 
 export default {
   data () {
     return {
-      scrolled: null
+      scrolled: false
     }
   },
   components: { Smartphone },
@@ -28,8 +30,12 @@ export default {
   },
   methods: {
     handleScroll () {
-      console.log(window.scrollY > 0)
       this.scrolled = window.scrollY > 0
+    },
+    scrollTo (target) {
+      jump(target, {
+        offset: -80 // navbar height
+      })
     }
   }
 }
@@ -40,7 +46,7 @@ export default {
 
   .navbar-scrolled
     background-color: $darkest
-    box-shadow: 0 1px 10px 0px rgba(0, 0, 0, 0.18)
+    box-shadow: 0 1px 10px 5px rgba(0, 0, 0, 0.20)
   .navbar
     // background-color: white
     position: fixed

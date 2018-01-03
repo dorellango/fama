@@ -1,5 +1,5 @@
 <template>
-  <div class="team">    
+  <div id="team">    
     <div class="container">
       <div class="is-section">
         <div class="mb4">
@@ -14,7 +14,7 @@
                 <img src="http://via.placeholder.com/300x200" alt="">
               </div>
               <div class="card-content">
-                <h3 v-text="member.name"></h3>
+                <h3 class="text-bold" v-text="member.name"></h3>
                 <span v-text="member.role"></span>
               </div>
             </div>
@@ -42,7 +42,7 @@ export default {
 
 <style lang="sass">
   @import 'assets/sass/variables'
-  .team
+  #team
     background-color: $lighter
 
 </style>

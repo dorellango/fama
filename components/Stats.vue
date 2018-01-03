@@ -1,5 +1,5 @@
 <template>
-  <div class="stats">
+  <div id="stats">
     <div class="container stats--inner">
       <div class="level">
         <div class="level-item">
@@ -41,7 +41,7 @@ export default {
 
 <style lang="sass">
   @import '~assets/sass/variables'
-  .stats
+  #stats
     background-color: $orange
     color: $orange-lighter
     .stats--inner
