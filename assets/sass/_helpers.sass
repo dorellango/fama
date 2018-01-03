@@ -18,16 +18,40 @@
 
 
 .mr1
-  margin-left: 1rem
+  margin-right: 1rem
 .mr2
-  margin-left: 2rem
+  margin-right: 2rem
 .mr3
-  margin-left: 3rem
+  margin-right: 3rem
 .mr4
-  margin-left: 4rem
+  margin-right: 4rem
+
+.is-uppercase
+  text-transform: uppercase
+.is-italic
+  font-style: italic
+  font-family: 'Libre Baskerville' sans-serif
 
 .has-text-center
   text-align: center
+
+.text-light
+  font-weight: 300 !important
+
+.text-bold
+  font-weight: 300
+
+$colors: (('white', $white), ('lightest', $lightest), ('lighter', $lighter), ('orange-light', $orange-light), ('orange', $orange), ('orange-light', $orange-light), ('orange-lighter', $orange-lighter), ('orange-dark', $orange-dark), ('orange-darker', $orange-darker), ('grey', $grey), ('dark', $dark), ('darkest', $darkest), ('teal', $teal),  ('teal-dark', $teal-dark))
+
+@each $name, $color in $colors
+  .has-text-#{$name}
+    color: #{$color} !important  
+  svg.has-text-#{$name}
+    fill: #{$color} !important
+  a.has-text-#{$name}
+    &:hover,
+    &:focus
+      color: darken($color, 10%) !important
 
 .content
   p
@@ -38,16 +62,12 @@
     margin-left: 1rem
   h1
     font-size: 2rem
-    font-weight: bold
   h2
     font-size: 1.5rem
-    font-weight: bold
   h3
     font-size: 1.25rem
-    font-weight: bold
   h4
     font-size: 1rem
-    font-weight: bold
 
 .is-section
   padding: 6rem 0
@@ -55,10 +75,10 @@
 .title
   font-size: 2.5rem
   font-weight: bold
-  margin-bottom: .75rem
-  color: $darker
 .subtitle
   font-size: 1.25rem
+  letter-spacing: 1.5px
+
 
 
 .box-sh

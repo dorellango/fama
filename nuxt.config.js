@@ -11,7 +11,7 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:400,700' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,700|Rubik:400,700|Raleway:300,400,700|Libre+Baskerville:400,400i' }
     ],
     script: [
       { src: 'https://use.fontawesome.com/releases/v5.0.1/js/all.js' }

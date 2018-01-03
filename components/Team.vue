@@ -3,7 +3,7 @@
     <div class="container">
       <div class="is-section">
         <div class="mb4">
-          <h1 class="title">Our Team</h1>
+          <h1 class="title">Our <span class="is-italic has-text-orange">Team</span></h1>
           <p class="subtitle">¡Fantastic People!</p>
         </div>
 

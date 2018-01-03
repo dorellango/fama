@@ -31,13 +31,3 @@ export default {
   }
 }
 </script>
-
-<style lang="sass">
-  @import '~assets/sass/_variables.sass'
-
-  body
-    color: $dark
-  
-  h1, h2, h3, h4, h5
-    color: $darker
-</style>
