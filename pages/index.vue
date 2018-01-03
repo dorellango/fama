@@ -6,6 +6,7 @@
     <OurWork/>
     <Stats/>
     <Team/>
+    <Testimonials/>
     <FooterPage/>
   </section>
 </template>
@@ -18,6 +19,7 @@ import FooterPage from '~/components/FooterPage.vue'
 import OurWork from '~/components/OurWork.vue'
 import Stats from '~/components/Stats.vue'
 import Team from '~/components/Team.vue'
+import Testimonials from '~/components/Testimonials.vue'
 
 export default {
   components: {
@@ -27,6 +29,7 @@ export default {
     Stats,
     FooterPage,
     Team,
+    Testimonials,
     OurWork
   }
 }

@@ -33,7 +33,7 @@
             <div class="level">
               <Tree class="icon is-large mr1 has-text-grey"/>
               <p class="is-3"> ¿Do you want to help?
-              <br>Apple <span class="has-text-orange">here</span></p>
+              <br>Apply <span class="has-text-orange">here</span></p>
             </div>
           </div>
           <div class="level-item">
