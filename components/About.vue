@@ -27,5 +27,4 @@
   @import '~assets/sass/_variables.sass'
   .about
     background-color: $lighter
-    .about--inner
 </style>
