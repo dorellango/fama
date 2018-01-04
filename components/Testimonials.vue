@@ -4,19 +4,24 @@
       <div class="is-section">
           <div class="columns is-centered">
             <div class="column is-half">
-              <div v-for="(quote, index) in quotes" :key="index" v-show="index === current" class="quote">
-                <Quote class="icon is-large has-text-orange-light"/>
-                <div class="has-text-center">
-                  <h2 class="is-2 text-bold" v-text="quote.name"></h2>
-                  <p class="is-3" v-text="quote.body"></p>
-                  <small class="text-spaced is-uppercase has-text-grey" v-text="quote.misc"></small>
+              <transition-group
+                enter-active-class="animated fadeIn">
+
+                <div v-for="(quote, index) in quotes" :key="index" v-show="index === current" class="quote">
+                  <Quote class="icon is-large has-text-orange-light"/>
+                  <div class="has-text-center">
+                    <h2 class="is-2 text-bold" v-text="quote.name"></h2>
+                    <p class="is-3" v-text="quote.body"></p>
+                    <small class="text-spaced is-uppercase has-text-grey" v-text="quote.misc"></small>
+                  </div>
                 </div>
-              </div>
+              </transition-group>
+
             </div>
             <!-- arrows -->
             <div class="column is-2">
               <div class="has-text-right is-1" style="align-items: center; justify-content: flex-end; display: flex; height: 100%">
-                <span @click="previus" class="has-text-orange pointer">&larr;</span>
+                <span @click="previus" class="has-text-orange pointer mr1">&larr;</span>
                 <span @click="next" class="has-text-orange pointer">&rarr;</span>
               </div>
             </div>
@@ -46,7 +51,7 @@ export default {
   mounted () {
     setInterval(() => {
       this.next()
-    }, 3000)
+    }, 6000)
   },
   methods: {
     next () {
@@ -61,7 +66,6 @@ export default {
 
 <style lang="sass">
   @import '~assets/sass/variables'
-
   #testimonials
     background-color: $light
     .quote

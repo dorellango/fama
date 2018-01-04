@@ -25,7 +25,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    vendor: ['minireset.css'],
+    vendor: ['minireset.css', 'animate.css'],
     /*
     ** Run ESLint on save
     */
