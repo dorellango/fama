@@ -7,10 +7,10 @@
           <p class="subtitle">¡Fantastic People!</p>
         </div>
 
-        <div class="columns is-multiline">
-          <div class="column is-one-quarter" v-for="(member, index) in team" :key="index">
+        <div class="columns is-multiline is-mobile">
+          <div class="column is-one-quarter is-half-mobile" v-for="(member, index) in team" :key="index">
             <div class="card">
-              <div class="card-image">
+              <div class="card-image image">
                 <img src="http://via.placeholder.com/300x200" alt="">
               </div>
               <div class="card-content">

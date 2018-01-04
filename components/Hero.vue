@@ -1,5 +1,12 @@
 <template>
   <div class="hero">
+
+    <Modal v-if="modal" @close="modal = false">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4jbjz0KxNx0" allowfullscreen></iframe>
+      </div>
+    </Modal>
+
     <div class="hero--image"></div>
     <div class="container hero__inner">
       <div class="hero--content">
@@ -13,8 +20,8 @@
           </div>
           <div class="level-item">
             <div style="text-align: right">
-              <a href="#">
-                <Play class="icon is-large-x has-text-orange-light scalable" /></a>
+              <a @click="modal = true" class="pointer">
+                <Play class="icon is-large-x has-text-orange-light scalable"/></a>
             </div>
           </div>
         </div>
@@ -25,10 +32,17 @@
 </template>
 <script>
 import Play from '~/assets/play-outline.svg'
+import Modal from '~/components/Modal.vue'
 
 export default {
+  data () {
+    return {
+      modal: false
+    }
+  },
   components: {
-    Play
+    Play,
+    Modal
   }
 }
 </script>

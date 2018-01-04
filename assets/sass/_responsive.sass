@@ -1,6 +1,6 @@
 $column-gap: 0.75rem !default
 
-.column, %column
+.column
   display: block
   flex-basis: 0
   flex-grow: 1
@@ -56,15 +56,12 @@ $column-gap: 0.75rem !default
     &.is-two-thirds
       flex: none
       width: 66.6666%
-    &%is-half,
     &.is-half
       flex: none
       width: 50%
-    &%is-one-third,
     &.is-one-third
       flex: none
       width: 33.3333%
-    &%is-one-quarter,
     &.is-one-quarter
       flex: none
       width: 25%
@@ -79,13 +76,13 @@ $column-gap: 0.75rem !default
     &.is-offset-one-quarter
       margin-left: 25%
     @for $i from 1 through 12
-      &.is-#{$i}, &%is-#{$i}
+      &.is-#{$i}
         flex: none
         width: ($i / 12) * 100%
       &.is-offset-#{$i}
         margin-left: ($i / 12) * 100%
 
-.columns, %columns
+.columns
   margin-left: (-$column-gap)
   margin-right: (-$column-gap)
   margin-top: (-$column-gap)
@@ -109,7 +106,7 @@ $column-gap: 0.75rem !default
       margin-bottom: 0
   &.is-mobile
     display: flex
-  &.is-multiline, &%is-multiline
+  &.is-multiline
     flex-wrap: wrap
   &.is-vcentered
     align-items: center
