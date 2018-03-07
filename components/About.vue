@@ -9,10 +9,10 @@
           </div>
           <div class="column is-one-third">
             <div class="content">
-              <p>Ut qui in iste soluta atque explicabo nam esse ex.</p>
-              <p>Lorem ipsum dolor sit amet, <strong>consectetur adipisicing elit.</strong> Numquam natus voluptate, aut corrupti ipsa harum tenetur sunt pariatur qui hic nam? Aspernatur perspiciatis esse placeat vel? Ea magni, obcaecati ratione aspernatur doloribus saepe facilis pariatur dolore possimus! Fugit, quod culpa.</p>
+              <p>Somos una organización sin fines de lucro, movida por el amor de Cristo y, destinada a ayudar, orientar, apoyar y colaborar a personas en condición de calle, vulnerables y en extrema pobreza, a través de la entrega de alimentación, vestuario, habilitación laboral, reinserción social y rehabilitación por consumo problemático de drogas o alcohol.</p>
+              <p>Motivados por el amor a Cristo y la esperanza del evangelio, partimos con la vocación de generar cambios positivos en la sociedad, sumando esperanzas a las personas vulnerables, que se encuentran en situación de calle y de bajos recursos.</p>
               <div class="level">
-                  <Quote class="icon is-large has-text-orange"/>
+                  <Quote class="has-text-orange icon" />
                 <blockquote class="has-text-darker">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, iusto!</blockquote>
               </div>
             </div>

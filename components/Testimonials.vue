@@ -39,9 +39,11 @@ export default {
     return {
       current: 0,
       quotes: [
-        { name: 'Obi-Wan', body: 'If you define yourself by the power to take life, the desire to dominate, to possess…then you have nothing.', misc: 'Star Wars Rebels, T3.' },
-        { name: 'Master Yoda', body: 'You will know (the good from the bad) when you are calm, at peace. Passive. A Jedi uses the Force for knowledge and defense, never for attack.', misc: 'Star Wars V.' },
-        { name: 'Kylo Ren', body: 'Let the past die. Kill it if you have to. That is the only way to become what you were meant to be.', misc: 'Star Wars VIII, The Last Jedi' }
+        { name: 'Maximo Mardonez', body: 'Se siente la presencia de Dios.', misc: '(50 años)' },
+        { name: 'Catalina Montecinos', body: 'Las personas son cariñosas y humildes.', misc: '(27 años)' },
+        { name: 'Veronica Robles y Joel Cerda', body: 'El trato que se entrega no lo hace cualquiera si no esta la presencia de Dios.', misc: '(37 y 57 años)' },
+        { name: 'Miguel Angel ', body: 'Que todos los dias sean Domingos.', misc: '(49 años)' },
+        { name: 'German Morales', body: 'Gracias a la ayuda de Dios y de todos los que estan aquí.', misc: '(55 años)' }
       ]
     }
   },

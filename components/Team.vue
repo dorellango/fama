@@ -30,10 +30,12 @@ export default {
   data () {
     return {
       team: [
-        { name: 'Patricia Orellana G.', role: 'Secretary & Founder' },
-        { name: 'Patricia Orellana G.', role: 'Secretary & Founder' },
-        { name: 'Patricia Orellana G.', role: 'Secretary & Founder' },
-        { name: 'Patricia Orellana G.', role: 'Secretary & Founder' }
+        { name: 'Patricia Orellana G.', role: 'Presidenta' },
+        { name: 'Claudia Carvajal M.', role: 'Tesorera' },
+        { name: 'Stephens Iriarte M..', role: 'Vicepresidente' },
+        { name: 'Jose Luis Aránguiz O.', role: 'Director' },
+        { name: 'Jean Pierre Sepúlveda N.', role: 'Fundador y Director Ejecutivo' },
+        { name: 'Heriberto Gomez V.', role: 'Fundador' }
       ]
     }
   }

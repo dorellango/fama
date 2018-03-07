@@ -1,8 +1,8 @@
 <template>
-  <div :class="['navbar', this.scrolled ? 'navbar-scrolled' : '']">
+  <div :class="['navbar', this.scrolled ? 'shadow bg-grey-darkest' : '']">
       <div class="container navbar__inner">
-        <span class="navbar__brand has-text-white">
-          -- logo --
+        <span class="navbar__brand logo">
+          <img src="~/static/logo.png" alt="Logo">
         </span>
         <ul class="navbar__list">
           <li class="mr2"><a class="has-text-white" @click="scrollTo('#about')">About.</a></li>
@@ -43,7 +43,9 @@ export default {
 
 <style lang="sass">
   @import '~assets/sass/variables'
-
+  .logo img
+    height: 60px
+    width: auto
   .navbar-scrolled
     background-color: $darkest
     box-shadow: 0 1px 10px 5px rgba(0, 0, 0, 0.20)

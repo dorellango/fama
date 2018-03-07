@@ -26,10 +26,13 @@ module.exports = {
   */
   build: {
     vendor: ['minireset.css', 'animate.css'],
+    postcss: [
+      require('tailwindcss')('./tailwind.js')
+    ],
     /*
     ** Run ESLint on save
     */
-    extend (config, ctx) {
+    extend (config, { isDev, isClient }) {
       /*
       ** Change the behavior to manage .svg files
       */
@@ -42,7 +45,7 @@ module.exports = {
         exclude: /(node_modules)/
       })
 
-      if (ctx.dev && ctx.isClient) {
+      if (isDev && isClient) {
         config.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,
@@ -52,5 +55,4 @@ module.exports = {
       }
     }
   },
-  plugins: ['~/plugins/vue2-google-maps.js']
 }
