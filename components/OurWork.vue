@@ -3,12 +3,12 @@
     <div class="container">
       <Fists class="our-work-bg"/>
       <div class="is-section">
-        <div class="columns">
-          <div class="column is-half">
+        <div class="flex">
+          <div class="flex-1">
             <p class="title has-text-dark">Lo que <span class="is-italic has-text-orange text-light">hacemos</span></p>
             <p class="subtitle">Pilares de nuestra labor</p>
           </div>
-          <div class="column">
+          <div class="flex-1">
             <ul>
               <li class="content">
                 <div class="media">
@@ -28,7 +28,7 @@
                   </div>
                   <div class="media-content">
                    <h3 class="has-text-dark text-bold">Articular</h3>
-                   <p>Generar un cambio en las personas a través del trabajo en equipo con otras instituciones y, posteriormente, con centros para rehabilitar a aquellos que acepten dar el paso de recibir ayuda profesional para acabar con sus adicciones al consumo de alcohol, drogas y otras sustancias.</p> 
+                   <!-- <p>Generar un cambio en las personas a través del trabajo en equipo con otras instituciones y, posteriormente, con centros para rehabilitar a aquellos que acepten dar el paso de recibir ayuda profesional para acabar con sus adicciones al consumo de alcohol, drogas y otras sustancias.</p>  -->
                   </div>
                 </div>
               </li>

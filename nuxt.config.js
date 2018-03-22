@@ -25,7 +25,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    vendor: ['minireset.css', 'animate.css'],
+    vendor: ['animate.css'],
     postcss: [
       require('tailwindcss')('./tailwind.js')
     ],

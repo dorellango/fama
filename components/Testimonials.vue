@@ -42,7 +42,8 @@ export default {
         { name: 'Maximo Mardonez', body: 'Se siente la presencia de Dios.', misc: '(50 años)' },
         { name: 'Catalina Montecinos', body: 'Las personas son cariñosas y humildes.', misc: '(27 años)' },
         { name: 'Veronica Robles y Joel Cerda', body: 'El trato que se entrega no lo hace cualquiera si no esta la presencia de Dios.', misc: '(37 y 57 años)' },
-        { name: 'Miguel Angel ', body: 'Que todos los dias sean Domingos.', misc: '(49 años)' },
+        { name: 'Miguel Angel', body: 'Que todos los dias sean Domingos.', misc: '(49 años)' },
+        { name: 'Cecilia Serrano', body: 'Hay recibimiento sin discriminacion, son respetuosos y se preocupan por uno, ustedes son distintos.', misc: '(49 años)' },
         { name: 'German Morales', body: 'Gracias a la ayuda de Dios y de todos los que estan aquí.', misc: '(55 años)' }
       ]
     }

@@ -1,15 +1,15 @@
 <template>
   <div :class="['navbar', this.scrolled ? 'shadow bg-grey-darkest' : '']">
-      <div class="container navbar__inner">
-        <span class="navbar__brand logo">
-          <img src="~/static/logo.png" alt="Logo">
-        </span>
-        <ul class="navbar__list">
-          <li class="mr2"><a class="has-text-white" @click="scrollTo('#about')">About.</a></li>
-          <li class="mr2"><a class="has-text-white" @click="scrollTo('#our-work')">Work</a></li>
-          <li class="mr2"><a class="has-text-white" @click="scrollTo('#stats')">Stats</a></li>
-          <li class="mr2"><a class="has-text-white" @click="scrollTo('#team')">Team</a></li>
-          <li><a href="" class="btn btn-orange"> Contact <strong>Us</strong></a></li>
+      <div class="container flex items-center h-24">
+        <div class="flex-1">
+          <img class="h-16 w-auto" src="~/static/logo.png" alt="Logo">
+        </div>
+        <ul class="list-reset flex">
+          <li class="mr-6"><a class="text-white hover:text-orange" href="#" @click="scrollTo('#about')">About</a></li>
+          <li class="mr-6"><a class="text-white hover:text-orange" href="#" @click="scrollTo('#our-work')">Work</a></li>
+          <li class="mr-6"><a class="text-white hover:text-orange" href="#" @click="scrollTo('#stats')">Stats</a></li>
+          <li class="mr-6"><a class="text-white hover:text-orange" href="#" @click="scrollTo('#team')">Team</a></li>
+          <li><a href="" class="bg-orange hover:bg-orange-light py-3 px-6 text-white rounded-full"> Contact Us</a></li>
         </ul>
       </div>
     </div>  
@@ -43,12 +43,6 @@ export default {
 
 <style lang="sass">
   @import '~assets/sass/variables'
-  .logo img
-    height: 60px
-    width: auto
-  .navbar-scrolled
-    background-color: $darkest
-    box-shadow: 0 1px 10px 5px rgba(0, 0, 0, 0.20)
   .navbar
     // background-color: white
     position: fixed
@@ -57,17 +51,5 @@ export default {
     width: 100%
     z-index: 1000
     transition: background-color .3s ease 
-    .navbar__inner
-      height: 80px
-      display: flex
-      align-items: center
-      span.navbar__brand
-        font-weight: bold
-        font-size: 1.25rem
-      ul.navbar__list
-        flex-grow: 1
-        display: flex
-        justify-content: flex-end
-        align: center
 
 </style>
