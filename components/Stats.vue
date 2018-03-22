@@ -1,28 +1,22 @@
 <template>
-  <div id="stats">
-    <div class="container stats--inner">
-      <div class="level">
-        <div class="level-item">
-          <div class="has-text-center">
-            <h3 class="title">12000  <Cutlery class="icon is-medium" /></h3>
-            <p class="subtitle">Lorem, ipsum dolor.</p>
-          </div>
+    <div id="stats" class="p-8 bg-orange text-orange-lighter">
+        <div class="container">
+            <div class="flex text-center">
+                <div class="flex-1">
+                    <h3 class="text-4xl flex items-center justify-center text-orange-lightest">12000  <Cutlery class="fill-current h-8 w-8 ml-2" /></h3>
+                    <p class="text-lg tracking-wide">Lorem, ipsum dolor.</p>
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-4xl flex items-center justify-center text-orange-lightest">275 <Gauge class="fill-current h-8 w-8 ml-2" /></h3>
+                    <p class="text-lg tracking-wide">Fugit, quos quibusdam!</p>
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-4xl flex items-center justify-center text-orange-lightest">879  <People class="fill-current h-8 w-8 ml-2" /></h3>
+                    <p class="text-lg tracking-wide">Rem, aliquam cumque.</p>
+                </div>
+            </div>
         </div>
-        <div class="level-item">
-          <div class="has-text-center">
-            <h3 class="title">275 <Gauge class="icon is-medium" /></h3>
-            <p class="subtitle">Fugit, quos quibusdam!</p>
-          </div>
-        </div>
-        <div class="level-item">
-          <div class="has-text-center">
-            <h3 class="title">879  <People class="icon is-medium" /></h3>
-            <p class="subtitle">Rem, aliquam cumque.</p>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -38,17 +32,3 @@ export default {
   }
 }
 </script>
-
-<style lang="sass">
-  @import '~assets/sass/variables'
-  #stats
-    background-color: $orange
-    color: $orange-lighter
-    .stats--inner
-      padding: 3rem
-    .title
-      color: $orange-lightest
-    .level-item svg
-      fill: $orange-lightest
-
-</style>
