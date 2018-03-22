@@ -42,7 +42,6 @@ export default {
 </script>
 
 <style lang="sass">
-  @import '~assets/sass/variables'
   .navbar
     // background-color: white
     position: fixed
