@@ -1,54 +1,41 @@
 <template>
-  <div id="our-work">
-    <div class="container">
-      <Fists class="our-work-bg"/>
-      <div class="is-section">
-        <div class="flex">
-          <div class="flex-1">
-            <p class="title has-text-dark">Lo que <span class="is-italic has-text-orange text-light">hacemos</span></p>
-            <p class="subtitle">Pilares de nuestra labor</p>
-          </div>
-          <div class="flex-1">
-            <ul>
-              <li class="content">
-                <div class="media">
-                  <div class="media-left">
-                    <Charity class="icon is-large has-text-orange"/>
-                  </div>
-                  <div class="media-content">
-                   <h3 class="has-text-dark text-bold">Acoger</h3>
-                   <p>Nuestra meta es generar lazos a través de diversas actividades como el "Lugar de Encuentro", nombre que se le da a los comedores abiertos, donde buscamos acercarnos a la comunidad más vulnerable del sector para realizar entregas de: mercadería, vestuario y diversos tipos de ayuda sociales. Esto nos permite conocer a cada una de las personas y pasar a la segunda fase: “En Todo Tempo”, que es visitar a los seleccionados, ya sea en la calle o en una vivienda, y de esta manera afianzar más la relación.</p> 
-                  </div>
+    <!-- TODO -->
+    <div id="our-work" class="p-8 overflow-hidden">
+        <div class="container mx-auto relative">
+            <Fists class="our-work-bg fill-current text-grey-lighter"/>
+            <div class="flex">
+                <div class="flex-1">
+                    <p class="text-4xl text-grey-darker font-bold">Lo que <span class="text-orange italic font-italic text-light">hacemos</span></p>
+                    <p class="text-xl text-grey-dark tracking-wide mb-8">Pilares de nuestra labor</p>
                 </div>
-              </li>
-              <li class="content">
-                <div class="media">
-                  <div class="media-left">
-                    <Protection class="icon is-large has-text-orange"/>
-                  </div>
-                  <div class="media-content">
-                   <h3 class="has-text-dark text-bold">Articular</h3>
-                   <!-- <p>Generar un cambio en las personas a través del trabajo en equipo con otras instituciones y, posteriormente, con centros para rehabilitar a aquellos que acepten dar el paso de recibir ayuda profesional para acabar con sus adicciones al consumo de alcohol, drogas y otras sustancias.</p>  -->
-                  </div>
+                <div class="flex-1">
+                    <ul class="list-reset text-grey-dark">
+                        <li class="flex mb-6">
+                            <Charity class="h-24 w-24 fill-current text-orange mr-4"/>
+                            <div>
+                                <h3 class="text-grey-darker text-bold">Acoger</h3>
+                                <p>A traves del amor buscamos generar lazos y acercarnos a la comunidad más vulnerable de nuestro entorno, por medio de diversas actividades y proyectos. </p> 
+                            </div>
+                        </li>
+                        <li class="flex mb-6">
+                            <Protection class="h-24 w-24 fill-current text-orange mr-4"/>
+                            <div>
+                                <h3 class="text-grey-darker text-bold">Articular</h3>
+                                    <p>Gracias a los lazos generados, el trabajo de un equipo multiciplinario y la asociación con otras instituciones buscamos generar un cambio y rehabilitación en las personas.</p>
+                            </div>
+                        </li>
+                        <li class="flex">
+                            <Protection class="h-24 w-24 fill-current text-orange mr-4"/>
+                            <div>
+                                <h3 class="text-grey-darker text-bold">Empoderar</h3>
+                                <p>Comprometidos con un trabajo completo queremos acompañar hasta el final a cada persona y entregar las herramientas necesarias para la reinserción laboral y social.</p> 
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-              </li>
-              <li class="content">
-                <div class="media">
-                  <div class="media-left">
-                    <House class="icon is-large has-text-orange"/>
-                  </div>
-                  <div class="media-content">
-                   <h3 class="has-text-dark text-bold">Empoderar.</h3>
-                   <p> impulsado por el amor de Cristo, a través del que buscamos generar lazos y cambios en las personas que padecen alguna adicción, para que encuentren nuevas oportunidades de salir adelante. Por lo que nos manifestamos como esa mano amiga a quienes se sienten solos en medio de esta sociedad, en ser ese apoyo que los acompaña y apoya en el proceso de reinserción, y en caminar juntos hasta verlos restaurados y renovados.</p> 
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -69,14 +56,8 @@ export default {
 
 
 <style lang="sass">
-  @import '~assets/sass/_variables.sass'
   #our-work
-    color: $grey
-    overflow: hidden
-    .container
-      position: relative
     .our-work-bg
-      fill: $lighter
       width: 350px
       height: 350px
       position: absolute

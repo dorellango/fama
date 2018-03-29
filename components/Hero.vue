@@ -1,76 +1,53 @@
 <template>
-  <div class="hero">
+  <div class="hero h-screen relative">
+    <modal name="hero" width="800" height="369">
+        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ffundacionama.servir%2Fvideos%2F539110589757094%2F&autoplay=true&show_text=false&appId=834017066653711"
+        width="800" height="369" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+    </modal>
 
-    <Modal v-if="modal" @close="modal = false">
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4jbjz0KxNx0" allowfullscreen></iframe>
-      </div>
-    </Modal>
-
-    <div class="hero--image"></div>
-    <div class="container hero__inner">
-      <div class="hero--content">
-        <div class="level">
-          <div class="level-item">
-            <div class="text-sh" style="max-width: 400px">
-                <p class="subtitle has-text-lightest text-light">.Ex, architecto?</p>
-                <p class="title has-text-white">Lorem ipsum 
-                <span class="has-text-orange-light text-light is-italic">dolor sit</span> amet consectetur.</p>
-            </div>
+    <div class="hero-bg"></div>
+    <div class="container mx-auto h-full relative flex items-center justify-center">
+        <div class="flex w-1/2 items-center">
+          <div class="text-white flex-1 animated bounceInLeft">
+              <p>.Ex, architecto?</p>
+              <h2 class="text-4xl text-white">Lorem ipsum 
+              <span class="text-orange font-italic italic">dolor sit</span> amet consectetur.</h2>
           </div>
-          <div class="level-item">
-            <div style="text-align: right">
-              <a @click="modal = true" class="pointer">
-                <Play class="icon is-large-x has-text-orange-light scalable"/></a>
-            </div>
+          <div class="ml-4 animated fadeIn">
+            <a href="#" @click="$modal.show('hero')">
+              <Play class="h-16 w-16 text-orange-light hover:text-orange fill-current scalable"/>
+            </a>
           </div>
         </div>
-        
-      </div>
     </div>
   </div>
 </template>
 <script>
 import Play from '~/assets/play-outline.svg'
-import Modal from '~/components/Modal.vue'
 
 export default {
-  data () {
-    return {
-      modal: false
-    }
-  },
   components: {
     Play,
-    Modal
   }
 }
 </script>
 
 <style lang="sass">
+  .v--modal-overlay
+    background: rgba(0,0,0,0.5)
+
   .scalable
     transition: transform .3s ease
     &:hover
       transform: scale(1.05)
-  .hero
-    height: 100vh
-    position: relative
-    .hero__inner
-      height: 100%
-      display: flex
-      align-items: center
-      position: relative
-      z-index: 10
-      .hero--content
-        width: 100%
-    .hero--image
-      background-image: url('~static/hero.jpeg')
-      background-size: cover
-      position: absolute
-      top: 0
-      left: 0
-      right: 0
-      bottom: 0
-      filter: grayscale(100%)
+  .hero-bg
+    background-image: url('~static/hero.jpeg')
+    background-size: cover
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    filter: grayscale(100%)
 </style>
 

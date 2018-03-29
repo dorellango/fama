@@ -1,13 +1,15 @@
 <template>
-  <div class="bg-grey-darkest p-12 text-grey-dark">
-    <div class="container flex items-center">
+  <div class="bg-grey-darkest p-8 text-grey-dark">
+    <div class="container mx-auto flex items-center">
         <div class="flex-1">
-            <p class="text-grey font-mono text-xl">+569 456 9456</p>
+            <p class="text-grey font-mono text-xl mb-2">
+                <i class="fas fa-phone"></i> +569 73792498
+            </p>
             <p class="text-spaced is-3">Fundacion Ama &copy; <strong>2018</strong></p>
             <div class="text-sm mt-2">
-                <a class="mr-4 hover:text-orange">Donaciones</a>
-                <a class="mr-4 hover:text-orange">Contacto</a>
-                <a class="mr-4 hover:text-orange">Team</a>
+                <a href="#" class="mr-4 text-grey-dark hover:text-orange">Donaciones</a>
+                <a href="#" class="mr-4 text-grey-dark hover:text-orange">Contacto</a>
+                <a href="#" class="mr-4 text-grey-dark hover:text-orange">Team</a>
                 <!-- More links -->
             </div>
         </div>
@@ -25,7 +27,7 @@
                 <Spot class="text-grey mr-4 h-12 w-12 fill-current" />
                 <p class="is-3">
                     <span class="block">Ven a visitarnos!</span>
-                    Revisa de <a class="text-orange">como llegar.</a>
+                    Revisa de <a @click="$modal.show('address')" class="text-orange cursor-pointer hover:text-orange-light">como llegar.</a>
                 </p>
             </div>
         </div>
@@ -33,7 +35,38 @@
     <p class="mt-6 text-grey-dark tracking-wide text-xs text-center border-t border-dashed border-grey-darker pt-6">
         Designed by <span class="text-orange">@dorellango</span>
     </p>
+    <modal name="address" height="auto">
+        <div>
+            <!-- Heading -->
+            <div class="bg-orange p-4 flex items-center">
+                <i class="fas fa-map-marker-alt fill-current text-orange-lightest text-4xl mr-4"></i>
+                <div class="flex-1">
+                    <h2 class="text-orange-lightest">Ven a visitarnos</h2>
+                    <p class="text-orange-lighter">Teniente Montt Salamanca #12265. La Pintana, Santiago.</p>
+                </div>
+            </div>
+            <gmap-map
+                :center="{
+                            lat:-33.5757942, 
+                            lng:-70.6575718
+                    }"
+                :zoom="17"
+                map-type-id="terrain"
+                style="width: 100%; height: 300px"
+            >
+                <gmap-marker
+                    :position="{
+                            lat:-33.5757942, 
+                            lng:-70.6575718
+                    }"
+                    :clickable="true"
+                    :draggable="true"
+                ></gmap-marker>
+            </gmap-map>
+        </div>
+    </modal>
   </div>
+
 </template>
 
 <script>

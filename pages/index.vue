@@ -1,14 +1,14 @@
 <template>
-  <section class="wrapper">
+  <div class="font-sans leading-normal">
     <Navbar/>
     <Hero/>
     <About/>
     <OurWork/>
     <Stats/>
     <Team/>
-    <Testimonials/>
+    <!-- <Testimonials/> -->
     <FooterPage/>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -19,7 +19,7 @@ import FooterPage from '~/components/FooterPage.vue'
 import OurWork from '~/components/OurWork.vue'
 import Stats from '~/components/Stats.vue'
 import Team from '~/components/Team.vue'
-import Testimonials from '~/components/Testimonials.vue'
+// import Testimonials from '~/components/Testimonials.vue'
 
 export default {
   components: {
@@ -29,7 +29,7 @@ export default {
     Stats,
     FooterPage,
     Team,
-    Testimonials,
+    // Testimonials,
     OurWork
   }
 }
