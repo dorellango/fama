@@ -68,9 +68,7 @@ export default {
 </script>
 
 <style lang="sass">
-  @import '~assets/sass/variables'
   #testimonials
-    background-color: $light
     .quote
       position: relative
       z-index: 1

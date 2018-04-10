@@ -7,13 +7,14 @@
 
     <div class="hero-bg"></div>
     <div class="container mx-auto h-full relative flex items-center justify-center">
-        <div class="flex w-1/2 items-center">
-          <div class="text-white flex-1 animated bounceInLeft">
-              <p>.Ex, architecto?</p>
-              <h2 class="text-4xl text-white">Lorem ipsum 
-              <span class="text-orange font-italic italic">dolor sit</span> amet consectetur.</h2>
+        <div class="flex max-w-lg items-center">
+          <div class="text-white flex-1 animated bounceInLeft text-shadow">
+              <h3 class="text-2xl font-normal">Afuera están quienes nos necesitan</h3>
+              <h1 class="text-5xl text-white">Seamos una cadena de apoyo,
+              <span class="text-orange font-italic italic">solidaridad</span>, y fe.</h1>
+              
           </div>
-          <div class="ml-4 animated fadeIn">
+          <div class="ml-4 animated pulse infinite">
             <a href="#" @click="$modal.show('hero')">
               <Play class="h-16 w-16 text-orange-light hover:text-orange fill-current scalable"/>
             </a>

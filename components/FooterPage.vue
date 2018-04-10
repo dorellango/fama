@@ -7,19 +7,9 @@
             </p>
             <p class="text-spaced is-3">Fundacion Ama &copy; <strong>2018</strong></p>
             <div class="text-sm mt-2">
-                <a href="#" class="mr-4 text-grey-dark hover:text-orange">Donaciones</a>
-                <a href="#" class="mr-4 text-grey-dark hover:text-orange">Contacto</a>
-                <a href="#" class="mr-4 text-grey-dark hover:text-orange">Team</a>
+                <a @click="$modal.show('donations')" class="mr-4 text-grey-dark hover:text-orange cursor-pointer">Donaciones</a>
+                <a @click="$modal.show('contact')" class="mr-4 text-grey-dark hover:text-orange cursor-pointer">Contacto</a>
                 <!-- More links -->
-            </div>
-        </div>
-        <div class="flex-1">
-            <div class="flex items-center justify-center">
-                <Tree class="text-grey mr-4 h-12 w-12 fill-current" />
-                <p class="is-3"> 
-                    <span class="block">¿Quieres participar?</span>
-                    Aplica <a class="text-orange">aquí.</a>
-                </p>
             </div>
         </div>
         <div class="flex-1">
@@ -29,6 +19,14 @@
                     <span class="block">Ven a visitarnos!</span>
                     Revisa de <a @click="$modal.show('address')" class="text-orange cursor-pointer hover:text-orange-light">como llegar.</a>
                 </p>
+            </div>
+        </div>
+        <div class="flex-1">
+            <div class="flex items-center justify-center">
+                <p class="text-sm mr-4">Síguenos en:</p>
+                <a href="" class="text-grey hover:text-orange"><Facebook class="fill-current mr-4 h-8 w-8"/></a>
+                <a href="" class="text-grey hover:text-orange"><Youtube class="fill-current mr-4 h-8 w-8"/></a>
+                <a href="" class="text-grey hover:text-orange"><Instagram class="fill-current mr-4 h-8 w-8"/></a>
             </div>
         </div>
     </div>
@@ -63,6 +61,28 @@
                     :draggable="true"
                 ></gmap-marker>
             </gmap-map>
+        </div>
+    </modal>
+    <modal name="donations" height="auto">
+        <div>
+            <!-- Heading -->
+            <div class="bg-orange p-4 flex items-center">
+                <i class="fas fa-hand-holding-usd fill-current text-orange-lightest text-4xl mr-4"></i>
+                <div class="flex-1">
+                    <h2 class="text-orange-lightest">Sumate</h2>
+                    <p class="text-orange-lighter">Haz tu aporte a fundación AMA.</p>
+                </div>
+            </div>
+            <div class="p-6">
+                <p class="mb-6">Datos donaciones bancarias:</p>
+                <p class="mb-2 text-lg">Banco de Chile</p>
+                <p class="text-xl mb-4 font-bold">169-43072-03</p>
+                <p class="mb-2">R.U.T Fundación Ama</p>
+                <p class="text-xl mb-2 font-bold">65.159.677-7</p>
+
+                <p class="mb-6 mt-6">Insumos, ropa u otros:</p>                
+                <p class="mb-2">Ponte en contacto con nosotros u acercate a nuestra dirección en <span class="italic font-bold">Teniente Montt Salamanca #12265. La Pintana, Santiago.</span></p>
+            </div>
         </div>
     </modal>
   </div>

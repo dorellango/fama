@@ -14,7 +14,7 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Libre+Baskerville:400,400i' }
     ],
     script: [
-      { src: 'https://use.fontawesome.com/releases/v5.0.1/js/all.js' }
+      { src: 'https://use.fontawesome.com/releases/v5.0.9/js/all.js' }
     ]
   },
   /*

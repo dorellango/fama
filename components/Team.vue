@@ -7,7 +7,7 @@
             <div class="flex flex-wrap -mx-2">
                 <div class="w-1/4" v-for="(member, index) in team" :key="index">
                     <div class="mx-2 my-4 bg-white shadow">
-                        <img src="http://via.placeholder.com/300x200" alt="">
+                        <img class="team-thumb" :src="avatar(member.thumb)">
                         <div class="p-4">
                             <h3 class="text-bold text-grey-darker" v-text="member.name"></h3>
                             <span class="text-grey-dark" v-text="member.role"></span>
@@ -24,14 +24,26 @@ export default {
   data () {
     return {
       team: [
-        { name: 'Patricia Orellana G.', role: 'Presidenta' },
-        { name: 'Claudia Carvajal M.', role: 'Tesorera' },
-        { name: 'Stephens Iriarte M..', role: 'Vicepresidente' },
-        { name: 'Jose Luis Aránguiz O.', role: 'Director' },
-        { name: 'Jean Pierre Sepúlveda N.', role: 'Fundador y Director Ejecutivo' },
-        { name: 'Heriberto Gomez V.', role: 'Fundador' }
+        { name: 'Patricia Orellana G.', role: 'Presidenta', thumb: 'patricia_o.png' },
+        { name: 'Claudia Carvajal M.', role: 'Tesorera', thumb: 'claudia_c.png' },
+        { name: 'Stephens Iriarte M..', role: 'Vicepresidente', thumb: 'stephens_i.png' },
+        { name: 'Jose Luis Aránguiz O.', role: 'Director', thumb: 'jose_l.png' },
+        { name: 'Jean Pierre Sepúlveda N.', role: 'Fundador y Director Ejecutivo', thumb: 'jean_p.png' },
+        { name: 'Heriberto Gomez V.', role: 'Fundador', thumb: 'heriberto_g.png' }
       ]
     }
+  }, 
+  methods: {
+      avatar(thumb) {
+          return thumb ? require(`../assets/${thumb}`) : 'http://via.placeholder.com/300x200';
+        //   return thumb ? require('~/assets/' + thumb) : 
+      }
   }
 }
 </script>
+
+<style lang="sass">
+    img.team-thumb
+        filter: grayscale(60%)
+</style>
+
