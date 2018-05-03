@@ -1,10 +1,11 @@
 <template>
   <div :class="['navbar px-6 animated bounceInDown z-10', this.scrolled ? 'shadow bg-grey-darkest' : '']">
       <div class="container mx-auto flex items-center h-24">
-        <div class="flex-1">
-          <img class="h-24 w-auto" src="~/static/logo-nav.png" alt="Logo">
+        <div class="flex-1 flex-no-shrink">
+          <img class="h-24 w-auto hidden md:block" src="~/static/logo-nav.png" alt="Logo">
+          <img class="h-16 w-auto block md:hidden" src="~/static/logo.png" alt="Logo">
         </div>
-        <ul class="list-reset flex">
+        <ul class="list-reset hidden md:flex">
           <li class="mr-6"><a class="text-white hover:text-orange" href="#" @click="scrollTo('#about')">Nosotros</a></li>
           <li class="mr-6"><a class="text-white hover:text-orange" href="#" @click="scrollTo('#our-work')">Trabajo</a></li>
           <li class="mr-6"><a class="text-white hover:text-orange" href="#" @click="scrollTo('#team')">Equipo</a></li>

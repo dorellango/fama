@@ -4,10 +4,10 @@
             <h1 class="text-4xl text-grey-darker">Nuestro <span class="italic text-orange font-italic text-light">equipo</span></h1>
             <p class="text-xl text-grey-dark tracking-wide mb-8">¡Gente fantástica!</p>
 
-            <div class="flex flex-wrap -mx-2">
-                <div class="w-1/4" v-for="(member, index) in team" :key="index">
+            <div class="md:flex flex-wrap -mx-2">
+                <div class="md:w-1/4" v-for="(member, index) in team" :key="index">
                     <div class="mx-2 my-4 bg-white shadow">
-                        <img class="team-thumb" :src="avatar(member.thumb)">
+                        <img class="team-thumb min-w-full" :src="avatar(member.thumb)">
                         <div class="p-4">
                             <h3 class="text-bold text-grey-darker" v-text="member.name"></h3>
                             <span class="text-grey-dark" v-text="member.role"></span>

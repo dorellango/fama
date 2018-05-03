@@ -3,7 +3,7 @@
     <div id="our-work" class="p-8 overflow-hidden">
         <div class="container mx-auto relative">
             <Fists class="our-work-bg fill-current text-grey-lighter"/>
-            <div class="flex">
+            <div class="md:flex">
                 <div class="flex-1">
                     <p class="text-4xl text-grey-darker font-bold">Lo que <span class="text-orange italic font-italic text-light">hacemos</span></p>
                     <p class="text-xl text-grey-dark tracking-wide mb-8">Pilares de nuestra labor</p>

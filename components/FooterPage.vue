@@ -1,7 +1,7 @@
 <template>
   <div class="bg-grey-darkest p-8 text-grey-dark">
-    <div class="container mx-auto flex items-center">
-        <div class="flex-1">
+    <div class="container mx-auto md:flex items-center">
+        <div class="flex-1 mb-8 md:mb-0">
             <p class="text-grey font-mono text-xl mb-2">
                 <i class="fas fa-phone"></i> +569 73792498
             </p>
@@ -9,11 +9,10 @@
             <div class="text-sm mt-2">
                 <a @click="$modal.show('donations')" class="mr-4 text-grey-dark hover:text-orange cursor-pointer">Donaciones</a>
                 <a @click="$modal.show('contact')" class="mr-4 text-grey-dark hover:text-orange cursor-pointer">Contacto</a>
-                <!-- More links -->
             </div>
         </div>
-        <div class="flex-1">
-            <div class="flex items-center justify-center">
+        <div class="flex-1 mb-8 md:mb-0">
+            <div class="flex items-center justify-start md:justify-center">
                 <Spot class="text-grey mr-4 h-12 w-12 fill-current" />
                 <p class="is-3">
                     <span class="block">Ven a visitarnos!</span>
@@ -22,8 +21,8 @@
             </div>
         </div>
         <div class="flex-1">
-            <div class="flex items-center justify-center">
-                <p class="text-sm mr-4">Síguenos en:</p>
+            <div class="md:flex items-center justify-center">
+                <p class="text-sm md:mr-4 mb-4 md:mb-0">Síguenos en:</p>
                 <a href="" class="text-grey hover:text-orange"><Facebook class="fill-current mr-4 h-8 w-8"/></a>
                 <a href="" class="text-grey hover:text-orange"><Youtube class="fill-current mr-4 h-8 w-8"/></a>
                 <a href="" class="text-grey hover:text-orange"><Instagram class="fill-current mr-4 h-8 w-8"/></a>
