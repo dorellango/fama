@@ -8,7 +8,7 @@ export default {
     },
     props:  ['to'],
     mounted() {
-        new CountUp(this.$el, 0, this.to, 0, 2.5, {
+        new CountUp(this.$el, 0, this.to, 0, 4, {
             separator: '.', 
         }).start();
     },
