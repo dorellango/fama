@@ -1,8 +1,8 @@
 <template>
   <div id="about" class="bg-grey-lighter">
     <div class="container mx-auto">
-      <div class="md:flex p-8">
-        <div class="md:w-full md:flex-wrap lg:flex-no-wrap lg:w-1/3 wow bounceInLeft">
+      <div class="md:flex p-8 md:flex-wrap lg:flex-no-wrap ">
+        <div class="md:w-full lg:w-1/3 wow bounceInLeft">
           <p class="text-4xl font-bold text-grey-darker">Una <span class="text-orange  italic font-italic text-light">pequeña</span></p>
           <p class="text-xl text-grey-dark tracking-wide mb-8">historia sobre nosotros</p>
         </div>
