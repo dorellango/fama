@@ -4,7 +4,8 @@
         <div class="flex-1 mb-8 md:mb-0">
             <div class="flex items-center mb-2">
                 <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M20 18.35V19a1 1 0 0 1-1 1h-2A17 17 0 0 1 0 3V1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4c0 .56-.31 1.31-.7 1.7L3.16 8.84c1.52 3.6 4.4 6.48 8 8l2.12-2.12c.4-.4 1.15-.71 1.7-.71H19a1 1 0 0 1 .99 1v3.35z"/></svg>
-                <a class="text-grey font-mono text-xl ml-2" href="tel:+56973792498">+569 73792498/a>
+                <a class="text-grey font-mono text-xl ml-2" href="tel:+56973792498">+569 73792498</a>                  
+                    
             </div>
             <p class="text-spaced is-3">Fundacion Ama &copy; <strong>2018</strong></p>
             <div class="text-sm mt-2">
