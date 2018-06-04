@@ -10,25 +10,25 @@
                 </div>
                 <div class="flex-1">
                     <ul class="list-reset text-grey-dark">
-                        <li class="flex mb-6">
-                            <Charity class="h-24 w-24 fill-current text-orange mr-4"/>
-                            <div>
-                                <h3 class="text-grey-darker text-bold">Acoger</h3>
-                                <p>A traves del amor buscamos generar lazos y acercarnos a la comunidad más vulnerable de nuestro entorno, por medio de diversas actividades y proyectos. </p> 
+                        <li class="flex flex-col items-center md:flex-row mb-6">
+                            <House class="flex-no-shrink h-10 w-10 fill-current text-orange mb-4 md:mb-0 md:mr-4"/>
+                            <div class="flex flex-col items-center md:block">
+                                <h3 class="text-grey-darker text-bold mb-2 md:mb-0">Acoger</h3>
+                                <p class="text-justify md:text-left">A traves del amor buscamos generar lazos y acercarnos a la comunidad más vulnerable de nuestro entorno, por medio de diversas actividades y proyectos. </p> 
                             </div>
                         </li>
-                        <li class="flex mb-6">
-                            <Protection class="h-24 w-24 fill-current text-orange mr-4"/>
-                            <div>
-                                <h3 class="text-grey-darker text-bold">Articular</h3>
-                                    <p>Gracias a los lazos generados, el trabajo de un equipo multiciplinario y la asociación con otras instituciones buscamos generar un cambio y rehabilitación en las personas.</p>
+                        <li class="flex flex-col items-center md:flex-row mb-6">
+                            <Charity class="flex-no-shrink h-10 w-10 fill-current text-orange mb-4 md:mb-0 md:mr-4"/>
+                            <div class="flex flex-col items-center md:block">
+                                <h3 class="text-grey-darker text-bold mb-2 md:mb-0">Articular</h3>
+                                <p class="text-justify md:text-left">Gracias a los lazos generados, el trabajo de un equipo multiciplinario y la asociación con otras instituciones buscamos generar un cambio y rehabilitación en las personas.</p>
                             </div>
                         </li>
-                        <li class="flex">
-                            <Protection class="h-24 w-24 fill-current text-orange mr-4"/>
-                            <div>
-                                <h3 class="text-grey-darker text-bold">Empoderar</h3>
-                                <p>Comprometidos con un trabajo completo queremos acompañar hasta el final a cada persona y entregar las herramientas necesarias para la reinserción laboral y social.</p> 
+                        <li class="flex flex-col items-center md:flex-row">
+                            <Protection class="flex-no-shrink h-10 w-10 fill-current text-orange mb-4 md:mb-0 md:mr-4"/>
+                            <div class="flex flex-col items-center md:block">
+                                <h3 class="text-grey-darker text-bold mb-2 md:mb-0">Empoderar</h3>
+                                <p class="text-justify md:text-left">Comprometidos con un trabajo completo queremos acompañar hasta el final a cada persona y entregar las herramientas necesarias para la reinserción laboral y social.</p> 
                             </div>
                         </li>
                     </ul>
