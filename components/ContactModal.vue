@@ -1,5 +1,5 @@
 <template>
-    <modal name="contact" height="auto">
+    <modal name="contact" height="auto" :adaptive="true">
       <div>
         <div class="bg-orange px-4 py-6 flex items-center">
             <i class="fas fa-phone -alt fill-current text-orange-lightest text-4xl mr-4 animated pulse infinite"></i>

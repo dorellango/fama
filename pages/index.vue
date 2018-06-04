@@ -31,6 +31,9 @@ export default {
       mobileMenu: false,
     }
   },
+  mounted() {
+    document.querySelector('body').classList.add('transition')
+  },
   methods: {
     toggleMobileMenu() {
       this.mobileMenu = !this.mobileMenu

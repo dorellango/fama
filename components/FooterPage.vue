@@ -66,7 +66,7 @@
             </gmap-map>
         </div>
     </modal>
-    <modal name="donations" height="auto">
+    <modal name="donations" height="auto" :adaptive="true">
         <div>
             <!-- Heading -->
             <div class="bg-orange p-4 flex items-center">
