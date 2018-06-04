@@ -7,10 +7,10 @@
         </div>
         <!-- Links -->
         <ul class="list-reset hidden md:flex">
-          <li class="mr-6"><a class="text-white hover:text-orange" href="#" @click.prevent="scrollTo('#about')">Nosotros</a></li>
-          <li class="mr-6"><a class="text-white hover:text-orange" href="#" @click.prevent="scrollTo('#our-work')">Trabajo</a></li>
-          <li class="mr-6"><a class="text-white hover:text-orange" href="#" @click.prevent="scrollTo('#team')">Equipo</a></li>
-          <li><a @click.prevent="$modal.show('contact')" class="bg-orange hover:bg-orange-light py-3 px-6 text-white rounded-full font-bold cursor-pointer"> Contacto</a></li>
+          <li class="mr-6"><a class="text-white hover:text-orange cursor-pointer" @click="scrollTo('#about')">Nosotros</a></li>
+          <li class="mr-6"><a class="text-white hover:text-orange cursor-pointer" @click="scrollTo('#our-work')">Trabajo</a></li>
+          <li class="mr-6"><a class="text-white hover:text-orange cursor-pointer" @click="scrollTo('#team')">Equipo</a></li>
+          <li><a @click="$modal.show('contact')" class="bg-orange hover:bg-orange-light py-3 px-6 text-white rounded-full font-bold cursor-pointer"> Contacto</a></li>
         </ul>
         <!-- Mobile -->
         <div class="md:hidden">
