@@ -34,7 +34,7 @@
         </div>
     </div>
     <p class="mt-6 text-grey-dark tracking-wide text-xs text-center border-t border-dashed border-grey-darker pt-6">
-        Designed by <a href="http://wwww.dorellango.cl" class="text-orange" target="_blank"></a>
+        Designed by <a href="http://wwww.dorellango.cl" class="text-orange" target="_blank">@dorellango</a>
     </p>
     <modal name="address" height="auto">
         <div>
