@@ -5,31 +5,18 @@
           <img class="h-24 w-auto hidden md:block" src="~/static/logo-nav.png" alt="Logo">
           <img class="h-16 w-auto block md:hidden" src="~/static/logo.png" alt="Logo">
         </div>
+        <!-- Links -->
         <ul class="list-reset hidden md:flex">
-          <li class="mr-6"><a class="text-white hover:text-orange" href="#" @click="scrollTo('#about')">Nosotros</a></li>
-          <li class="mr-6"><a class="text-white hover:text-orange" href="#" @click="scrollTo('#our-work')">Trabajo</a></li>
-          <li class="mr-6"><a class="text-white hover:text-orange" href="#" @click="scrollTo('#team')">Equipo</a></li>
-          <li><a @click="$modal.show('contact')" class="bg-orange hover:bg-orange-light py-3 px-6 text-white rounded-full font-bold cursor-pointer"> Contacto</a></li>
+          <li class="mr-6"><a class="text-white hover:text-orange" href="#" @click.prevent="scrollTo('#about')">Nosotros</a></li>
+          <li class="mr-6"><a class="text-white hover:text-orange" href="#" @click.prevent="scrollTo('#our-work')">Trabajo</a></li>
+          <li class="mr-6"><a class="text-white hover:text-orange" href="#" @click.prevent="scrollTo('#team')">Equipo</a></li>
+          <li><a @click.prevent="$modal.show('contact')" class="bg-orange hover:bg-orange-light py-3 px-6 text-white rounded-full font-bold cursor-pointer"> Contacto</a></li>
         </ul>
-      </div>
-      <modal name="contact" height="auto">
-      <div>
-        <div class="bg-orange px-4 py-6 flex items-center">
-            <i class="fas fa-phone -alt fill-current text-orange-lightest text-4xl mr-4 animated pulse infinite"></i>
-            <div class="flex-1">
-                <h2 class="text-orange-lightest">Contáctanos</h2>
-            </div>
-        </div>
-        <div class="px-4 py-6 text-grey-dark">
-          <p class="mb-2">Si conoces alguien que necesite ayuda o quieres hacer alguna donación, ponte en contacto con nosotros.</p>
-          <h3 class="mb-2 text-grey-darker">Nuestros números</h3>
-          <p class="mb-2 font-mono">+569 73792498</p>
-          <p class="mb-2 font-mono">+569 44422139</p>
-          <h3 class="mb-2 text-grey-darker">Correo</h3>
-          <a href="mailto:contacto@fundacionama.cl" class="mb-2 text-orange hover:text-orange-light">contacto@fundacionama.cl</a>
+        <!-- Mobile -->
+        <div class="md:hidden">
+          <svg @click="$emit('toggleMobileMenu')" class="fill-current w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
         </div>
       </div>
-    </modal>
     </div>    
 </template>
 <script>

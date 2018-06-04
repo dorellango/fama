@@ -12,15 +12,8 @@
               <h3 class=" text-xl md:text-2xl font-normal text-shadow">Afuera están quienes nos necesitan</h3>
               <h1 class=" text-4xl md:text-5xl text-white text-shadow">Seamos una cadena de apoyo,
               <span class="text-orange font-italic italic text-shadow">solidaridad</span>, y fe.</h1>
-              <a class="text-xl bg-orange hover:bg-orange-light py-3 px-6 text-white rounded-full cursor-pointer mt-6 inline-block"> Haz tu aporte</a>
-
-              
+              <a href="#" @click.prevent="$modal.show('donations')" class="text-xl bg-orange hover:bg-orange-light py-3 px-6 text-white rounded-full cursor-pointer mt-6 inline-block"> Haz tu aporte</a>
           </div>
-          <!-- <div class="ml-4 animated pulse infinite">
-            <a href="#" @click="$modal.show('hero')">
-              <Play class="h-16 w-16 text-orange-light hover:text-orange fill-current scalable"/>
-            </a>
-          </div> -->
         </div>
     </div>
   </div>
