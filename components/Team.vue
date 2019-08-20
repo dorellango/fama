@@ -28,7 +28,6 @@ export default {
       team: [
         { name: 'Patricia Orellana', role: 'Presidenta', thumb: 'patricia_o.png' },
         { name: 'Claudia Carvajal', role: 'Tesorera', thumb: 'claudia_c.png' },
-        { name: 'Stephens Iriarte', role: 'Vicepresidente', thumb: 'stephens_i.png' },
         { name: 'Jose Luis Aránguiz', role: 'Director', thumb: 'jose_l.png' },
         { name: 'Jean Pierre Sepúlveda', role: 'Fundador y Director Ejecutivo', thumb: 'jean_p.png' }
       ]
